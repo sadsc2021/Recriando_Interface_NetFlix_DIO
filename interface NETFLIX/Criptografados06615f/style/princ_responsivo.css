@@ -1,0 +1,20 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn1{
+        position: absolute;
+        margin-top: 5px;
+        left: 28%;
+        width: 150px;
+    }
+
+    .btn2{
+        position: absolute;
+        margin-top: 5px;
+        left: 15%;
+        width: 150px;
+    }
+}

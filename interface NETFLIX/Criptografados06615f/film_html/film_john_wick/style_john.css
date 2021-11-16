@@ -1,0 +1,170 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos basico*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*coisas relacionada com o filme*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,100%)), url('../../img/imgTopo/john_wick.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 95%;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+}
+
+.carrosel-filmes .carrosel-filmes2{
+    margin-top: 5px;
+}
+
+.carrosel-filmes .acao{
+    margin-left: 2%;
+}
+
+.carrosel-filmes2 .comedia{
+    margin-left: 2%;
+}
+
+.ContainerPop{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    width: 110%;
+    height: 70%;
+    display: none;
+    background: transparent;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.popup{
+    margin-top: 1%;
+    margin-left: 25%;
+    width: 50%;
+    height: 130%;
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,100%)), url('../../img/imgPopUp/john.jpg');
+    background-size: cover;
+    max-height: 80%;
+    max-width: 50%;
+}
+
+.popup .bot{
+    width: 45px;
+    border-radius: 30px;
+    background-color: #aaa;
+}
+
+.popup .bot:hover{
+    background-color: red;
+}
+
+.popup .descricao1{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.container1{
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 50%;
+    height: 110%;
+    position: fixed;
+    background: transparent;
+    background-size: cover;
+    max-height: 77.1%;
+    max-width: 45%;
+}
